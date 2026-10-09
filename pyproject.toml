@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "causal-telemetry"
+version = "0.1.0"
+description = "Causal Inference on Hardware Telemetry Time Series for Job Execution Time Estimation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "statsmodels>=0.14.0",
+    "pyyaml>=6.0",
+    "matplotlib>=3.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0"
+]
+causal = [
+    "tigramite>=5.2.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

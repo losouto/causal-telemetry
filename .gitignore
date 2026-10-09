@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Data and Artifacts (ignore raw and processed datasets, keep gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+results/models/*
+!results/models/.gitkeep
+results/figures/*
+!results/figures/.gitkeep
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment variables & secrets
+.env
+*.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
